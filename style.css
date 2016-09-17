@@ -10,7 +10,7 @@ body,h1,h2,h3,h4,h5,h6 {
     margin: 0 auto;
     border-right: .15em solid orange; /* blinking cursor */
     animation: type 1.5s steps(20, end), blink-caret .80s step-end infinite;
-    color: #777;
+    color: #D6D6D6;
 }
 
 @keyframes type {
@@ -68,13 +68,13 @@ a .fa{
 }    
 .background-1 { 
     /* Main Theme */
-    background-color: #D1D1D1; 
+    background-color: #22313F; 
     color: #ffffff;
 }
 
 .background-2 { 
      /* Cooler */
-    background-color: #22313F;
+    background-color: #6A7380;
     color: #ffffff;
 }
 .background-3 { 
