@@ -171,7 +171,7 @@ body {
     box-shadow: none;
   }
   5% {
-    font-size: 160px;
+    font-size: 150px;
   }
   20% {
     background-color: #41B587;
@@ -180,7 +180,7 @@ body {
     color: #F5F4DA;
     text-shadow: 1px 1px 50px #F5F4D3;
     background-color: #41B587;
-    font-size: 160px;
+    font-size: 150px;
   }
   100% {
     background-color: #52D9A3;
