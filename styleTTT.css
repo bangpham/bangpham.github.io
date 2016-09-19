@@ -17,7 +17,7 @@ body {
 
 @media screen and (max-width: 765px) {
 
-    .navbar-nav li a:hover {file:///Users/Bang/Desktop/Webdev/Test.io/barney.html#myCarousel
+    .navbar-nav li a:hover {
         font-size: 150%;
         font-weight: bold;
         color: #3498DB !important;
@@ -31,6 +31,10 @@ body {
         -moz-transition: 0.2s;
     }
 }
+
+
+
+
 .navbar {
     font-family: Muli, sans-serif;
     width: 100%;
@@ -48,16 +52,22 @@ body {
     -moz-transition: 0.4s;
     transition: 0.4s;
 }
-.statusboard {
-    margin-top: 3px;
+
+.status {
+    text-align: center;
+    margin: auto;
+    padding-left: 10px;
+    font-size: 12px;
 }
-.statusboard .start, .status {
-    margin-left: 6px;
+
+.statusboard {
+    text-align: center;
 }
 .start {
+    margin: auto;
+    width: 65px;
     color: #46946B;
     height: 30px;
-    width: 50px;
     border: 2px solid #DAE0DD;
     background-color: #D7E0DC;
     box-shadow: inset 0 0 0 0 #fff;
@@ -93,26 +103,26 @@ body {
 	display: flex;
     width: 300px;
     margin:0 auto;
-    justify-content: center;
-    align-items: center;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     transition: 0.3s;
 }
 .gameboard {
-	margin-top: 15%;
-    width: 398px;
-    height:398px;
+    padding-top: 60px;
+    margin: auto;
+    width: 350px;
+    height:350px;
     z-index: 1;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     transition: 0.4s;
+    margin-bottom: 60px;
 }
 .gameboard .box {
 	background-color: #52D9A3;
 	margin: 6px;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     float: left;
     color: #fff;
     font-size: 45px;
@@ -124,7 +134,6 @@ body {
     transition: 0.3s;
     box-shadow: 5px 5px 10px .2px #176143;
 }
-
 
 
 .gameboard .boxwin {
@@ -156,13 +165,5 @@ body {
     background-color: #52D9A3;
     box-shadow: none;
 }
-
-
-    
-
-
-
-
-
 
 
