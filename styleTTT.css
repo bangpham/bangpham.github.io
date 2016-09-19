@@ -31,9 +31,30 @@ body {
         -moz-transition: 0.2s;
     }
 }
+/* ----------- iPhone 5 ----------- */
 
-
-
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 340px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .gameboard .box {
+        background-color: #52D9A3;
+        width: 94px !important;
+        height: 94px !important;
+    }
+    .gameboard {
+        width: 320px !important;
+        height:320px !important;
+    }
+    .wrapper {
+        width: 320px !important;
+        height: 320px !important;
+    }
+    .start {
+        width: 50px !important;
+    }
+}
 
 .navbar {
     font-family: Muli, sans-serif;
@@ -65,7 +86,7 @@ body {
 }
 .start {
     margin: auto;
-    width: 65px;
+    width: 55px;
     color: #46946B;
     height: 30px;
     border: 2px solid #DAE0DD;
@@ -110,13 +131,13 @@ body {
 .gameboard {
     padding-top: 60px;
     margin: auto;
-    width: 350px;
-    height:350px;
+    width: 340px;
+    height:340px;
     z-index: 1;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     transition: 0.4s;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
 }
 .gameboard .box {
 	background-color: #52D9A3;
