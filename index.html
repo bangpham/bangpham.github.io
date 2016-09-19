@@ -10,6 +10,10 @@
   <link href="style.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'/>
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'/>
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 </head>
 <body>
     
@@ -30,6 +34,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#home">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
+          <li><a href="#project">PROJECT</a></li>
           <li><a href="#contact">CONTACT</a></li>
           <li><a href="resume.pdf" target="_blank">RESUME</a></li>
         </ul>
@@ -39,8 +44,6 @@
 
   <!--Div 1-->
   <div id="home" class="container-fluid background-1 text-center">
-    <br>
-    <br>
     <h3 id="h3-top"></h3>
     <img src="image/pic2.png" class="img-circle img-responsive" alt="profile picture">
     <h3></h3><br>
@@ -50,34 +53,78 @@
   </div>
 
   <div id="about" class="container-fluid background-2 text-center">
-    <h3> </h3>
-    <br>
-    <h1> I am </h1>
-    <p>A junior undergraduate at Georgia Tech
-    <br><br>
-    A Computational Media major focusing on frontend development
-    <br><br>
-    A football fanatic <br><br>
-    <i class="fa fa-futbol-o" aria-hidden="true"></i>
-
-
+    <div class="fadeIn">
+      <h1>I am</h1>
+      <p>A junior undergraduate at Georgia Tech
+      <br><br>
+      A Computational Media major focusing on frontend development
+      <br><br>
+      A football fanatic <br>
+      <i class="fa fa-futbol-o" aria-hidden="true"></i>
+    </div>
   </div>
 
-  <div id="contact" class="container-fluid background-3 text-center">
-    <h3></h3>
-    <h3>Contact me</h3>
-    <div class="icon-container">
-    	<h4><a href="mailto:bangpham2701@gmail.com" target="_blank">Bangpham2701@gmail.com</a></h4>
-	    <a href="https://github.com/bangpham" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-	    <a href=https://www.linkedin.com/in/bang-pham target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-	    <a href="https://twitter.com/BchinoFam" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-	    <a href="mailto:bangpham2701@gmail.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+
+
+  <div id="project" class="container-fluid background-3 text-center">
+    <h1 class="fadeIn">What I've created</h1><br>
+    <div class="fadeIn row">
+
+      <div class="col-sm-9 col-md-3">
+        <div class="thumbnail">
+          <a href="https://github.com/bangpham/Bomb">
+            <img src="image/bomb.png" class="project-image img img-responsive" alt="AGL"/>
+          </a>
+          <p>Minesweeper</p>
+        </div>
+      </div>
+
+      <div class="col-sm-9 col-md-3"">
+        <div class="thumbnail">
+          <a href="https://github.com/bangpham/AGL">
+            <img src="image/agl2.png" class=" project-image img img-responsive" alt="AGL"/>
+          </a>
+          <p>Commercial Website</p>
+        </div>
+      </div>
+
+      <div class="col-sm-9 col-md-3">
+        <div class="thumbnail">
+          <a href="TicTacToe.html">
+            <img src="image/ttt2.png" class="project-image img img-responsive" alt="tictactoe"/>
+          </a>
+          <p>Tic-Tac-Toe</p>
+        </div>
+      </div>
+
+      <div class="col-sm-9 col-md-3"><div">
+        <div class="thumbnail">
+          <a href="barney.html">
+            <img src="image/Barney.png" class="project-image img img-responsive" alt="tictactoe"/>
+          </a>
+          <p>Barney Stinson 3D</p>
+        </div>
+      </div>
+
     </div>
-    <br>
+  </div>
+
+
+  <div id="contact" class="container-fluid background-4 text-center">
+    <div class="fadeIn">
+      <h1>Contact me</h1>
+      <div class="icon-container">
+      	<h4><a href="mailto:bangpham2701@gmail.com" target="_blank">Bangpham2701@gmail.com</a></h4>
+  	    <a href="https://github.com/bangpham" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+  	    <a href=https://www.linkedin.com/in/bang-pham target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+  	    <a href="https://twitter.com/BchinoFam" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+  	    <a href="mailto:bangpham2701@gmail.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+      </div>
+    </div>
   </div>
 
   <!-- Footer -->
-  <footer class="container-fluid background-4 text-center">
+  <footer class="container-fluid background-5 text-center">
    <span>Designed by Bang Pham © 2016</span>
   </footer>
 
@@ -96,17 +143,45 @@
 
     // Scroll anchor
     $(document).ready(function(){
-      $('a[href^="#"]').on('click',function (e) {
-          e.preventDefault();
+      $('a[href^="#"]').on('click',function (event) {
+          event.preventDefault();
 
           var target = this.hash;
           var $target = $(target);
 
           $('html, body').stop().animate({
               'scrollTop': $target.offset().top
-          }, 900, 'swing');
+          }, 850, 'swing', function () {
+            window.location.hash = target;
+        });
       });
     });
+
+    $(function() {
+    $("#home, #about").on("click", function() {
+        $("body").animate({"scrollTop": window.scrollY+720}, 1200);
+        return false;
+    });
+
+    $("footer, #contact").on("click", function() {
+        $("body").animate({"scrollTop": window.scrollY-2000}, 1200);
+        return false;
+    });
+
+    $(window).scroll( function(){
+  
+        $('.fadeIn').each( function(i) {           
+            var object_bottom = $(this).outerHeight() + $(this).position().top;
+            var window_bottom = $(window).scrollTop() + $(window).height();
+            window_bottom = window_bottom + 200;  
+            if(window_bottom > object_bottom) {
+                $(this).animate({'opacity':'1'},1200);          
+            }
+        }); 
+    
+    });
+}); 
+
   </script>
 </body>
 </html>

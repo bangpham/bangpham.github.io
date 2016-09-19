@@ -1,14 +1,18 @@
 body,h1,h2,h3,h4,h5,h6 {
-    font-family: "Lato", sans-serif;
+    font-family: "Muli", sans-serif;
+}
+
+.fadeIn {
+    opacity: 0;
 }
 
 .type-animation {
-    width: 310px;
+    width: 340px;
     margin-right: 300px;
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
-    border-right: .15em solid orange; /* blinking cursor */
+    border-right: .15em solid orange;
     animation: type 1.5s steps(20, end), blink-caret .80s step-end infinite;
     color: #D6D6D6;
 }
@@ -36,7 +40,6 @@ h1, h2, h3 {
 
 p {
     font-size: 23px;
-    padding-bottom: 50px;
 }
 
 .fa {
@@ -61,6 +64,44 @@ a .fa{
     color: #474e5d;
 }
 
+.col-md-3 {
+    padding-bottom: 40px;
+}
+
+.project-image {
+    max-width: 75%;
+    max-height: 75%;
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0px 10px 30px -6px black;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.thumbnail:hover {
+    box-shadow: 0px 10px 30px 0px black;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.thumbnail p {
+    padding-top: 20px;
+    color: #636363;
+    font-size: 15px;
+}
+
 .img-circle {
     display: inline;
     width: 19%;
@@ -70,28 +111,41 @@ a .fa{
     /* Main Theme */
     background-color: #22313F; 
     color: #ffffff;
+    padding-top: 130px;
+    padding-bottom: 150px;
 }
 
 .background-2 { 
-     /* Cooler */
-    background-color: #6A7380;
-    color: #ffffff;
+     /* About */
+    background-color: #E6E6E6;
+    color: #636363;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
+
+.background-2 h1 { 
+    color: #636363;
+}
+    /* Project */
 .background-3 { 
-     /* White */
+    background-color: #474F59;
+    color: #ffffff;
+    padding: 150px 80px 150px 80px;
+}
+.background-4 { 
+     /* Contact */
     background-color: #ffffff;
     color: #555555;
+    padding-top: 130px;
+    padding-bottom: 130px;
 }
-    /* dark */
-.background-4 { 
+    /* Footer */
+.background-5 { 
     background-color: #2f2f2f;
     color: #ffffff;
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-.container-fluid:not(.background-4) {
-    padding-top: 80px;
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    cursor: url(image/cursor.gif) 2 2 , n-resize;
 }
 
 .navbar {
@@ -103,10 +157,11 @@ a .fa{
     border-radius: 0;
     margin-bottom: 0;
     font-size: 12px;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     transition: 0.4s;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
+    z-index:1;
 }
 
 .menu-button {
@@ -119,12 +174,12 @@ a .fa{
     -moz-transition: 0.1s;
 }
 
-    .navbar-default:hover {
-        box-shadow: 0px .1px 20px black;
-        transition: 0.1s;
-        -webkit-transition: 0.1s;
-        -moz-transition: 0.1s;
-    }
+.navbar-default:hover {
+    box-shadow: 0px .1px 20px black;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+}
 
 @media screen and (max-width: 765px) {
     .navbar-default {
