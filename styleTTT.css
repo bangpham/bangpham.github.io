@@ -39,6 +39,7 @@ body {
   and (max-device-width: 340px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .gameboard .box {
+        text-align: center;
         background-color: #52D9A3;
         width: 94px !important;
         height: 94px !important;
@@ -52,6 +53,7 @@ body {
         height: 320px !important;
     }
     .start {
+        text-align: center;
         width: 50px !important;
     }
 }
