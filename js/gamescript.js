@@ -41,6 +41,7 @@ $(document).ready(function(){
             $('.status').html("DRAW");
             return;
         } else if (over) {
+            turn = turn === "X" ? "O" : "X";
             $('.status').html(turn + " WINS");
         }else {
             $('.status').html(turn + " turn");
