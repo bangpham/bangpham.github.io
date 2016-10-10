@@ -20,6 +20,10 @@ body,h1,h2,h3,h4,h5,h6 {
     opacity: 0;
 }
 
+.fadeInEarly {
+    opacity: 0;
+}
+
 .type-animation {
     width: 340px;
     margin-right: 300px;
@@ -95,6 +99,7 @@ a .fa{
 
 .thumbnail {
     padding: 0 0 15px 0;
+    margin-bottom: 30px;
     border: none;
     border-radius: 0;
     box-shadow: 0px 10px 30px -6px black;

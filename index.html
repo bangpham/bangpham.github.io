@@ -68,9 +68,9 @@
 
   <div id="project" class="container-fluid background-3 text-center">
     <h1 class="fadeIn">What I've created</h1><br>
-    <div class="row">
+    <div class="row fadeInEarly">
 
-      <div class="fadeIn col-sm-9 col-md-3">
+      <div class=" col-sm-9 col-md-3">
         <div class="thumbnail">
           <a href="https://github.com/bangpham/CWC_public">
             <img src="image/cwc.png" class="project-image img img-responsive" alt="CWC"/>
@@ -86,7 +86,7 @@
         </div>
       </div>
 
-      <div class="fadeIn col-sm-9 col-md-3"">
+      <div class=" col-sm-9 col-md-3"">
         <div class="thumbnail">
           <a href="AGL.html">
             <img src="image/agl2.png" class=" project-image img img-responsive" alt="AGL"/>
@@ -98,13 +98,13 @@
           <a href="#">
             <img src="image/twitter.png" class=" project-image img img-responsive" alt="Twitter Simulator"/>
           </a>
-          <p>Twitter Simulator</p>
+          <p>Twitter Simulator (CS 1331)</p>
         </div>
 
 
       </div>
 
-      <div class="fadeIn col-sm-9 col-md-3">
+      <div class=" col-sm-9 col-md-3">
         <div class="thumbnail">
           <a href="TicTacToe.html">
             <img src="image/ttt2.png" class="project-image img img-responsive" alt="tictactoe"/>
@@ -116,18 +116,26 @@
           <a href="USSoccerLogo.pdf">
             <img src="image/usa.png" class=" project-image img img-responsive" alt="USSFlogoRedesign"/>
           </a>
-          <p>USSF logo Redesign</p>
+          <p>USSF logo redesign</p>
         </div>
 
       </div>
 
-      <div class="fadeIn col-sm-9 col-md-3"><div">
+      <div class=" col-sm-9 col-md-3"><div">
         <div class="thumbnail">
           <a href="barney.html">
-            <img src="image/barney.png" class="project-image img img-responsive" alt="tictactoe"/>
+            <img src="image/barney.png" class="project-image img img-responsive" alt="barney"/>
           </a>
           <p>Barney Stinson 3D</p>
         </div>
+
+        <div class="thumbnail">
+          <a href="snake.html">
+            <img src="image/snake.png" class="project-image img img-responsive" alt="snake"/>
+          </a>
+          <p>Snake (CS 1331)</p>
+        </div>
+
       </div>
 
     </div>
@@ -198,6 +206,15 @@
             var object_bottom = $(this).outerHeight() + $(this).position().top;
             var window_bottom = $(window).scrollTop() + $(window).height();
             window_bottom = window_bottom + 200;  
+            if(window_bottom > object_bottom) {
+                $(this).animate({'opacity':'1'},1200);          
+            }
+        });
+
+        $('.fadeInEarly').each( function(i) {           
+            var object_bottom = $(this).outerHeight() + $(this).position().top;
+            var window_bottom = $(window).scrollTop() + $(window).height();
+            window_bottom = window_bottom + 800;  
             if(window_bottom > object_bottom) {
                 $(this).animate({'opacity':'1'},1200);          
             }
