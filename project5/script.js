@@ -68,7 +68,7 @@ function showHowToscreen() {
 
 function showEndScreen() {
   $('#sidebar').fadeOut("slow");
-  $('body').css( { paddingLeft : "15%" } );
+  $('body').css( { paddingLeft : "0px" } );
   $('#word').text("Here is your Masterpiece!");
 $('.time').fadeOut("slow");
 $('.restartButton').css( { marginLeft : "200px" } );
