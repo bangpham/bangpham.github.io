@@ -1,0 +1,309 @@
+body {
+  background: linear-gradient(90deg, #a07bcc 10%, #d1bcea 90%);
+  padding-left:25%;
+  margin: 0;
+}
+
+#shouldbecentered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#splashscreen {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:#a07bcc;
+}
+
+#middlescreen {
+    display: none;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:#a07bcc;
+}
+
+#mainGame{
+  display: none;
+}
+
+#game {
+  display: block;
+  margin: 0px auto;
+  width: 200px;
+}
+
+button:hover {
+  background: #335169;
+}
+
+h1, h2, #endScreenMessage, #middleScreenMessage {
+  color: #61319b;;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.howToTitle{
+  padding: 20px;
+}
+
+#welcome{
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin: 10px auto;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.enter{
+  padding: 10px 0px;
+  width: 200px;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.howto {
+  padding: 10px 0px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#toggleRandom {
+  padding: 10px 0px;
+  width: 200px;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.restartButton{
+    padding: 10px 0px;
+  width: 200px;
+  display: block;
+  margin: 10px auto;
+}
+
+#middleScreenMessage {
+  display: block;
+  margin: auto;
+}
+
+
+.row{
+  padding: 0px 20px;
+}
+
+.rowword{
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.restartButton{
+  margin: 0 auto;
+
+}
+
+#sidebar{
+  padding: none;
+  position: fixed;
+   float: left;
+   height:100%;
+   width:24%; 
+   top:0;
+   left:0;
+   padding-right: 20px;
+   background:#61319b; 
+   z-index: 0;
+}
+
+.logo #imgLogo{
+  padding: 10px;
+  margin: 0px auto;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  margin: 10px auto 15px;
+  cursor: pointer;
+  background: white;
+  background-position: center;
+  display: inline-block;
+}
+
+
+#hold{
+  display: block;
+  background: none;
+  width: 100%;
+}
+
+button {
+  border: none;
+  background: #243949;
+  font-weight: bold;
+  color: white;
+}
+
+.controls{
+  margin: 0 auto;
+  display: block;
+}
+
+.line-slider #line-size{
+  width: 230px;
+  margin: 0 auto;
+}
+
+.controls button{
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+}
+
+.select-color ul {
+  margin: 10px auto 3px;
+  list-style: none;
+  max-width: 600px;
+  padding: 0;
+  display: table;
+}
+
+.select-color li {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  letter-spacing: 0;
+  height: 17px;
+  width: 17px;
+  padding: 2px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  margin: 0 5px 10px;
+  cursor: pointer;
+  
+}
+
+.red{
+  background: #D3162D;
+}
+
+.orange{
+  background: #F15A22;
+}
+
+.yellow{
+  background: #F9CC5D;
+}
+
+.green{
+  background: #3FD184;
+}
+
+.blue{
+  background: #28E8D5;
+}
+
+.indigo{
+  background: #6363C9;
+}
+
+.violet{
+  background: #45197C;
+}
+
+.brown{
+  background: #8B4513;
+}
+
+.black{
+  background: #000;
+}
+
+.white{
+  background: #fff;
+}
+
+
+.rmv{
+  background: #fff;
+}
+
+.rotate{
+  background: #fff;
+}
+
+#icon{
+  margin: 0 auto;
+}
+
+h2{
+  margin: 0 auto;
+  display: block;
+  color: #603D6B;
+  text-align: center;
+}
+
+#canvas #canvas2{
+  margin: 0px;
+  margin-left: 20px;
+}
+
+.player2words{
+    padding-top: 250px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.player2start{
+  padding: 10px 0px;
+  width: 200px;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+}
+
+
+#howToScreen {
+    display: none;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:#a07bcc;
+}
+
+#howToScreenMessage {
+  display: block;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+h2 #time {
+  padding: 0px;
+}
+
+#howToPic {
+  display: block;
+  margin: auto;
+  width: 70%;
+  height: 80%;
+}
+
