@@ -29,7 +29,7 @@ $(document).ready(function(){
         $(this).html(turn);
 
         var test = this;
-        $(test).css({"background-color" : "#178264", 'font-size': '1800px'});
+        $(test).css({"background-color" : "#178264", 'font-size': '150px'});
         setTimeout(function () {
             $(test).css({"background-color": "#52D9A3", 'font-size': '35px'});
         }, 300);
